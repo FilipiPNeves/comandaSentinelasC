@@ -36,7 +36,6 @@ function abrirWhatsapp() {
     var sobremesa7 = document.getElementById("sobremesa7").value;
     var sobremesa8 = document.getElementById("sobremesa8").value;
 
-    var mesa = document.getElementById("mesa").value;
     var numeroQuarto = document.getElementById("numeroQuarto").value;
     var nome = document.getElementById("nome").value;
     var msg = document.getElementById("msg").value;
@@ -70,7 +69,6 @@ function abrirWhatsapp() {
     var url = "https://wa.me/5522999939162?text=" // Meu numero
         + "*Pedido*" + "%0a" // Mensagem personalizada
         + "%0a" // Quebra de linha
-        + "*mesa*: " + mesa + "%0a" // Dados do formulário
 
 
         //Hospede ou Passante
