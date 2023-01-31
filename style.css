@@ -1,0 +1,310 @@
+*{
+    width: 100%;
+}
+
+#tudo {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#divTitle {
+    width: 100%;
+    text-align: center;
+}
+
+
+#mesa {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    height: 2em;
+    text-align: center;
+    font-size: larger;
+}
+
+
+#divH {
+    width: 10em;
+    margin: 2em auto 1em;
+}
+
+#labelHospede {
+}
+
+#div1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    
+}
+
+#divP {
+    width: 10em;
+    margin: 1em auto;
+    
+}
+
+#labelPassante {
+    
+}
+
+#div2 {
+    display: inline-flex;
+    width: 40%;
+    vertical-align: middle;
+}
+
+#numeroQuarto {
+    text-align: center;
+    height: 2em;
+}
+
+#nome {
+    text-align: center;
+    height: 2em;
+}
+
+#tittle {
+    margin-top: 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#tittlee {
+    margin-top: 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#msg {
+    margin-top: 3em;
+    text-align: center;
+}
+
+#uppercase {
+    text-transform: uppercase; 
+    font-weight: bold; 
+    font-size: large;
+}
+
+#button {
+    margin-top: 2em;
+    height: 5em;
+    width: 100%;
+}
+
+select {
+    margin-top: 3em;
+    height: 3em;
+    text-align: center;
+}
+
+#centralizarBotaoAdd {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 2em;
+    
+}
+
+#botaoAdd {
+    width: 100%;
+    height: 5em;
+}
+
+.botaoAdd {
+    width: 100%;
+    height: 5em;
+}
+
+/*CSS pratos*/
+
+#prato1 {
+
+}
+
+#prato2 {
+    display: none;
+}
+
+#prato3 {
+    display: none;
+}
+
+#prato4 {
+    display: none;
+}
+
+#prato5 {
+    display: none;
+}
+
+#prato6 {
+    display: none;
+}
+
+#prato7 {
+    display: none;
+}
+
+#prato8 {
+    display: none;
+}
+
+
+
+/*Css Alcools*/
+
+#alcool1 {
+
+}
+
+#alcool2 {
+    display: none;
+}
+
+#alcool3 {
+    display: none;
+}
+
+#alcool4 {
+    display: none;
+}
+
+#alcool5 {
+    display: none;
+}
+
+#alcool6 {
+    display: none;
+}
+
+#alcool7 {
+    display: none;
+}
+
+#alcool8 {
+    display: none;
+}
+
+/*Css NÃO Alcools*/
+
+#semalcool1 {
+
+}
+
+#semalcool2 {
+    display: none;
+}
+
+#semalcool3 {
+    display: none;
+}
+
+#semalcool4 {
+    display: none;
+}
+
+#semalcool5 {
+    display: none;
+}
+
+#semalcool6 {
+    display: none;
+}
+
+#semalcool7 {
+    display: none;
+}
+
+#semalcool8 {
+    display: none;
+}
+
+/*Css NÃO Alcools*/
+
+#sobremesa1 {
+
+}
+
+#sobremesa2 {
+    display: none;
+}
+
+#sobremesa3 {
+    display: none;
+}
+
+#sobremesa4 {
+    display: none;
+}
+
+#sobremesa5 {
+    display: none;
+}
+
+#sobremesa6 {
+    display: none;
+}
+
+#sobremesa7 {
+    display: none;
+}
+
+#sobremesa8 {
+    display: none;
+}
+
+#q2 {
+    display: none;
+}
+
+#o2 {
+    display: none;
+}
+
+#q3 {
+    display: none;
+}
+
+#o3 {
+    display: none;
+}
+
+#q4 {
+    display: none;
+}
+
+#o4 {
+    display: none;
+}
+
+#q5 {
+    display: none;
+}
+
+#o5 {
+    display: none;
+}
+
+#q6 {
+    display: none;
+}
+
+#o6 {
+    display: none;
+}
+
+#q7 {
+    display: none;
+}
+
+#o7 {
+    display: none;
+}
+
+#q8 {
+    display: none;
+}
+
+#o8 {
+    display: none;
+}
