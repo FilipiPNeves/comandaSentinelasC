@@ -73,9 +73,9 @@ function abrirWhatsapp() {
     
 
 
-    var url = "https://wa.me/5522999939162?text=" // Meu numero
-        + "*---------------------Comanda Sentinelas--------------------*" + "%0a" // Mensagem personalizada
-        + "%0a" // Quebra de linha
+    var url = "https://wa.me/5522999939162?text=" // 
+        + "*---------------------Comanda Sentinelas--------------------*" + "%0a" 
+        + "%0a" 
 
 
 

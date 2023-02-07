@@ -119,9 +119,7 @@ select {
 
 
 
-#prato1 {
 
-}
 
 #prato2 {
     display: none;
@@ -326,4 +324,8 @@ select {
 
 .none {
     display: none;
+}
+
+.crescerDiv {
+    width: 104%;
 }
