@@ -74,7 +74,7 @@ function abrirWhatsapp() {
 
 
     var url = "https://wa.me/5522999939162?text=" // 
-        + "*---------------------Comanda Sentinelas--------------------*" + "%0a" 
+        + "-----*COMANDA*-----" + "%0a" 
         + "%0a" 
 
 
@@ -95,7 +95,7 @@ function abrirWhatsapp() {
 
     if(prato8 != 0) {
         url +=
-                "----------------------------*Pratos*---------------------------" + "%0a"
+                "-------*Pratos*-------" + "%0a"
                 + "*Prato 01*: " + prato1 + "%0a" 
                 + "Quantidade: " + q1.value + "%0a"
                 if(o1.value != 0) {
@@ -153,7 +153,7 @@ function abrirWhatsapp() {
                 
     }else if(prato7 != 0) {
         url +=
-                "----------------------------*Pratos*---------------------------" + "%0a"
+                "-------*Pratos*-------" + "%0a"
                 + "*Prato 01*: " + prato1 + "%0a" 
                 + "Quantidade: " + q1.value + "%0a"
                 if(o1.value != 0) {
@@ -204,7 +204,7 @@ function abrirWhatsapp() {
 
     }else if(prato6 != 0) {
         url +=
-                "----------------------------*Pratos*---------------------------" + "%0a"
+                 "-------*Pratos*-------" + "%0a"
                 + "*Prato 01*: " + prato1 + "%0a" 
                 + "Quantidade: " + q1.value + "%0a"
                 if(o1.value != 0) {
@@ -248,7 +248,7 @@ function abrirWhatsapp() {
 
     }else if(prato5 != 0) {
         url +=
-                "----------------------------*Pratos*---------------------------" + "%0a"
+                "-------*Pratos*-------" + "%0a"
                 + "*Prato 01*: " + prato1 + "%0a" 
                 + "Quantidade: " + q1.value + "%0a"
                 if(o1.value != 0) {
@@ -285,7 +285,7 @@ function abrirWhatsapp() {
 
     }else if(prato4 != 0 ) {
         url +=
-                "----------------------------*Pratos*---------------------------" + "%0a"
+                "-------*Pratos*-------" + "%0a"
                 + "*Prato 01*: " + prato1 + "%0a" 
                 + "Quantidade: " + q1.value + "%0a"
                 if(o1.value != 0) {
@@ -315,7 +315,7 @@ function abrirWhatsapp() {
 
     }else if(prato3 != 0) {
         url +=
-                "----------------------------*Pratos*---------------------------" + "%0a"
+                 "-------*Pratos*-------" + "%0a"
                 + "*Prato 01*: " + prato1 + "%0a" 
                 + "Quantidade: " + q1.value + "%0a"
                 
@@ -339,7 +339,7 @@ function abrirWhatsapp() {
 
     }else if(prato2 != 0) {
         url +=
-                "----------------------------*Pratos*---------------------------" + "%0a"
+                "-------*Pratos*-------" + "%0a"
                 + "*Prato 01*: " + prato1 + "%0a" 
                 + "Quantidade: " + q1.value + "%0a"
 
@@ -358,7 +358,7 @@ function abrirWhatsapp() {
 
     }else if(prato1 != 0) {
         url +=
-                "-----------------------------*Pratos*----------------------------" + "%0a"
+                "-------*Pratos*-------" + "%0a"
                 + "*Prato 01*: " + prato1 + "%0a" 
                 + "Quantidade: " + q1.value + "%0a"
 
@@ -372,7 +372,7 @@ function abrirWhatsapp() {
 
     if(alcool8 != 0) {
         url +=
-                "-----------------------*Bebidas Alcolicas*---------------------" + "%0a"
+                "---*B. ALCOOLICAS*---" + "%0a"
                 + "*Bebida 01*: " + alcool1 + "%0a"
                 + "Quantidade: " + a1q.value + "%0a"
                 if(a1o.value != 0) {
@@ -430,7 +430,7 @@ function abrirWhatsapp() {
 
     }else if(alcool7 != 0) {
         url +=
-                "-----------------------*Bebidas Alcolicas*---------------------" + "%0a"
+                "---*B. ALCOOLICAS*---" + "%0a"
                 + "*Bebida 01*: " + alcool1 + "%0a"
                 + "Quantidade: " + a1q.value + "%0a"
                 if(a1o.value != 0) {
@@ -481,7 +481,7 @@ function abrirWhatsapp() {
 
     }else if(alcool6 != 0) {
         url +=
-                 "-----------------------*Bebidas Alcolicas*---------------------" + "%0a"
+                 "---*B. ALCOOLICAS*---" + "%0a"
                 + "*Bebida 01*: " + alcool1 + "%0a"
                 + "Quantidade: " + a1q.value + "%0a"
                 if(a1o.value != 0) {
@@ -525,7 +525,7 @@ function abrirWhatsapp() {
 
     }else if(alcool5 != 0) {
         url +=
-                "-----------------------*Bebidas Alcolicas*---------------------" + "%0a"
+                "---*B. ALCOOLICAS*---" + "%0a"
                 + "*Bebida 01*: " + alcool1 + "%0a"
                 + "Quantidade: " + a1q.value + "%0a"
                 if(a1o.value != 0) {
@@ -562,7 +562,7 @@ function abrirWhatsapp() {
 
     }else if(alcool4 != 0 ) {
         url +=
-                "-----------------------*Bebidas Alcolicas*---------------------" + "%0a"
+                "---*B. ALCOOLICAS*---" + "%0a"
                 + "*Bebida 01*: " + alcool1 + "%0a"
                 + "Quantidade: " + a1q.value + "%0a"
                 if(a1o.value != 0) {
@@ -591,7 +591,7 @@ function abrirWhatsapp() {
                 }else url += '%0a'
     }else if(alcool3 != 0) {
         url +=
-                "-----------------------*Bebidas Alcolicas*---------------------" + "%0a"
+                "---*B. ALCOOLICAS*---" + "%0a"
                 + "*Bebida 01*: " + alcool1 + "%0a"
                 + "Quantidade: " + a1q.value + "%0a"
                 if(a1o.value != 0) {
@@ -615,7 +615,7 @@ function abrirWhatsapp() {
 
     }else if(alcool2 != 0) {
         url +=
-                  "-----------------------*Bebidas Alcolicas*---------------------" + "%0a"
+                  "---*B. ALCOOLICAS*---" + "%0a"
                 + "*Bebida 01*: " + alcool1 + "%0a"
                 + "Quantidade: " + a1q.value + "%0a"
                 if(a1o.value != 0) {
@@ -631,7 +631,7 @@ function abrirWhatsapp() {
 
     }else if(alcool1 != 0) {
         url +=
-                 "-----------------------*Bebidas Alcolicas*---------------------" + "%0a"
+                "---*B. ALCOOLICAS*---" + "%0a"
                 + "*Bebida 01*: " + alcool1 + "%0a" 
                 + "Quantidade: " + a1q.value + "%0a"
                 if(a1o.value != 0) {
@@ -643,7 +643,7 @@ function abrirWhatsapp() {
 
     if(semalcool8 != 0) {
         url +=
-                "-------------------*Bebidas NÃO Alcolicas*-------------------" + "%0a"
+                "---*NÃO Alcolicas*---" + "%0a"
                 + "*Bebida 01*: " + semalcool1 + "%0a" 
                 + "Quantidade: " + sa1q.value + "%0a"
                 if(sa1o.value != 0) {
@@ -694,7 +694,7 @@ function abrirWhatsapp() {
 
     }else if(semalcool7 != 0) {
         url +=
-                "-------------------*Bebidas NÃO Alcolicas*-------------------" + "%0a"
+                "---*NÃO Alcolicas*---" + "%0a"
                 + "*Bebida 01*: " + semalcool1 + "%0a" 
                 + "Quantidade: " + sa1q.value + "%0a"
                 if(sa1o.value != 0) {
@@ -739,7 +739,7 @@ function abrirWhatsapp() {
 
     }else if(semalcool6 != 0) {
         url +=
-                "-------------------*Bebidas NÃO Alcolicas*-------------------" + "%0a"
+                "---*NÃO Alcolicas*---" + "%0a"
                 + "*Bebida 01*: " + semalcool1 + "%0a" 
                 + "Quantidade: " + sa1q.value + "%0a"
                 if(sa1o.value != 0) {
@@ -777,7 +777,7 @@ function abrirWhatsapp() {
                 }else url += '%0a'
     }else if(semalcool5 != 0) {
         url +=
-                "-------------------*Bebidas NÃO Alcolicas*-------------------" + "%0a"
+                "---*NÃO Alcolicas*---" + "%0a"
                 + "*Bebida 01*: " + semalcool1 + "%0a" 
                 + "Quantidade: " + sa1q.value + "%0a"
                 if(sa1o.value != 0) {
@@ -810,7 +810,7 @@ function abrirWhatsapp() {
 
     }else if(semalcool4 != 0 ) {
         url +=
-                "-------------------*Bebidas NÃO Alcolicas*-------------------" + "%0a"
+                "---*NÃO Alcolicas*---" + "%0a"
                 + "*Bebida 01*: " + semalcool1 + "%0a" 
                 + "Quantidade: " + sa1q.value + "%0a"
                 if(sa1o.value != 0) {
@@ -836,7 +836,7 @@ function abrirWhatsapp() {
                 }else url += '%0a'
     }else if(semalcool3 != 0) {
         url +=
-                "-------------------*Bebidas NÃO Alcolicas*-------------------" + "%0a"
+                "---*NÃO Alcolicas*---" + "%0a"
                 + "*Bebida 01*: " + semalcool1 + "%0a" 
                 + "Quantidade: " + sa1q.value + "%0a"
                 if(sa1o.value != 0) {
@@ -856,7 +856,7 @@ function abrirWhatsapp() {
                 }else url += '%0a'
     }else if(semalcool2 != 0) {
         url +=
-                "-------------------*Bebidas NÃO Alcolicas*-------------------" + "%0a"
+                "---*NÃO Alcolicas*---" + "%0a"
                 + "*Bebida 01*: " + semalcool1 + "%0a" 
                 + "Quantidade: " + sa1q.value + "%0a"
                 if(sa1o.value != 0) {
@@ -871,7 +871,7 @@ function abrirWhatsapp() {
 
     }else if(semalcool1 != 0) {
         url +=
-                "-------------------*Bebidas NÃO Alcolicas*-------------------" + "%0a"
+                "---*NÃO Alcolicas*---" + "%0a"
                 + "*Bebida 01*: " + semalcool1 + "%0a" 
                 + "Quantidade: " + sa1q.value + "%0a"
                 if(sa1o.value != 0) {
@@ -884,7 +884,7 @@ function abrirWhatsapp() {
 
     if(sobremesa8 != 0) {
         url +=
-                "-------------------------*Sobremesas*-------------------------" + "%0a"
+                "-----*Sobremesas*-----" + "%0a"
                 + "*Sobremesa 01*: " + sobremesa1 + "%0a"
                 + "Quantidade: " + s1q.value + "%0a"
                 if(s1o.value != 0) {
@@ -935,7 +935,7 @@ function abrirWhatsapp() {
 
     }else if(sobremesa7 != 0) {
         url +=
-                "-------------------------*Sobremesas*-------------------------" + "%0a"
+                "-----*Sobremesas*-----" + "%0a"
                 + "*Sobremesa 01*: " + sobremesa1 + "%0a"
                 + "Quantidade: " + s1q.value + "%0a"
                 if(s1o.value != 0) {
@@ -980,7 +980,7 @@ function abrirWhatsapp() {
 
     }else if(sobremesa6 != 0) {
         url +=
-               "-------------------------*Sobremesas*-------------------------" + "%0a"
+               "-----*Sobremesas*-----" + "%0a"
                 + "*Sobremesa 01*: " + sobremesa1 + "%0a"
                 + "Quantidade: " + s1q.value + "%0a"
                 if(s1o.value != 0) {
@@ -1019,7 +1019,7 @@ function abrirWhatsapp() {
 
     }else if(sobremesa5 != 0) {
         url +=
-                "-------------------------*Sobremesas*-------------------------" + "%0a"
+                "-----*Sobremesas*-----" + "%0a"
                 + "*Sobremesa 01*: " + sobremesa1 + "%0a"
                 + "Quantidade: " + s1q.value + "%0a"
                 if(s1o.value != 0) {
@@ -1052,7 +1052,7 @@ function abrirWhatsapp() {
 
     }else if(sobremesa4 != 0 ) {
         url +=
-                "-------------------------*Sobremesas*-------------------------" + "%0a"
+                "-----*Sobremesas*-----" + "%0a"
                 + "*Sobremesa 01*: " + sobremesa1 + "%0a"
                 + "Quantidade: " + s1q.value + "%0a"
                 if(s1o.value != 0) {
@@ -1078,7 +1078,7 @@ function abrirWhatsapp() {
                 }else url += '%0a'
     }else if(sobremesa3 != 0) {
         url +=
-                  "-------------------------*Sobremesas*-------------------------" + "%0a"
+                  "-----*Sobremesas*-----" + "%0a"
                 + "*Sobremesa 01*: " + sobremesa1 + "%0a"
                 + "Quantidade: " + s1q.value + "%0a"
                 if(s1o.value != 0) {
@@ -1098,7 +1098,7 @@ function abrirWhatsapp() {
                 }else url += '%0a'
     }else if(sobremesa2 != 0) {
         url +=
-                "-------------------------*Sobremesas*-------------------------" + "%0a"
+                "-----*Sobremesas*-----" + "%0a"
                 + "*Sobremesa 01*: " + sobremesa1 + "%0a" 
                 + "Quantidade: " + s1q.value + "%0a"
                 if(s1o.value != 0) {
@@ -1113,7 +1113,7 @@ function abrirWhatsapp() {
 
     }else if(sobremesa1 != 0) {
         url +=
-                "-------------------------*Sobremesas*-------------------------" + "%0a"
+                "-----*Sobremesas*-----" + "%0a"
                 + "*Sobremesa 01*: " + sobremesa1 + "%0a" 
                 + "Quantidade: " + s1q.value + "%0a"
                 if(s1o.value != 0) {
@@ -1124,7 +1124,7 @@ function abrirWhatsapp() {
     //MSG
 
     if(msg != 0) {
-        url +=  "------------*Mensagem*-------------" + '%0a' + msg;
+        url +=  "-----*Mensagem*-----" + '%0a' + msg;
     }
 
 
@@ -1167,43 +1167,36 @@ function addPrato() {
         prato.style.display = "block";
         q2.style.display = "block";
         o2.style.display = "block";
-        borda2.style.display = "block";
     }else if(flagPrato == 1) {
         var prato = document.getElementById("prato3");
         prato.style.display = "block";
-        q3.style.display = "block"
-        o3.style.display = "block"
-        borda3.style.display = "block";
+        q3.style.display = "block";
+        o3.style.display = "block";
     }else if(flagPrato == 2) {
         var prato = document.getElementById("prato4");
         prato.style.display = "block";
-        q4.style.display = "block"
-        o4.style.display = "block"
-        borda4.style.display = "block";
+        q4.style.display = "block";
+        o4.style.display = "block";
     }else if(flagPrato == 3) {
         var prato = document.getElementById("prato5");
         prato.style.display = "block";
-        q5.style.display = "block"
-        o5.style.display = "block"
-        borda5.style.display = "block";
+        q5.style.display = "block";
+        o5.style.display = "block";
     }else if(flagPrato == 4) {
         var prato = document.getElementById("prato6");
         prato.style.display = "block";
-        q6.style.display = "block"
-        o6.style.display = "block"
-        borda6.style.display = "block";
+        q6.style.display = "block";
+        o6.style.display = "block";
     }else if(flagPrato == 5) {
         var prato = document.getElementById("prato7");
         prato.style.display = "block";
-        q7.style.display = "block"
-        o7.style.display = "block"
-        borda7.style.display = "block";
+        q7.style.display = "block";
+        o7.style.display = "block";
     }else if(flagPrato == 6) {
         var prato = document.getElementById("prato8");
         prato.style.display = "block";
-        q8.style.display = "block"
-        o8.style.display = "block"
-        borda8.style.display = "block";
+        q8.style.display = "block";
+        o8.style.display = "block";
     }
 
     flagPrato++;
