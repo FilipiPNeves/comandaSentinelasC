@@ -83,7 +83,6 @@ function abrirWhatsapp() {
 
         if(nomeDoQuarto != 0 && div1 == 1 ) {
             url += "*Nome do quarto*: " + nomeDoQuarto + "%0a" + "%0a"
-            console.log(div1 == 1);
         }else if (nome != 0 && div2 == 1 ) {
             url += "*Nome do Passante*: " + nome + "%0a" + "%0a"
         }
