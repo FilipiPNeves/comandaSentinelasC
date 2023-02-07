@@ -65,6 +65,8 @@ function abrirWhatsapp() {
     var q8 = document.getElementById("q8");
     var o8 = document.getElementById("o8");
 
+    
+
 
     var url = "https://wa.me/5522999939162?text=" // Meu numero
         + "*Pedido*" + "%0a" // Mensagem personalizada
