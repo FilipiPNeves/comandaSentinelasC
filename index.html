@@ -26,335 +26,466 @@
             </div>
 
             <div id="m1" hidden>
-                <input id="numeroQuarto" name="numeroQuarto" type="text" placeholder="Numero do Quarto">
+                <select id="nomeDoQuarto">
+                    <option value="Nenhum quarto selecionado">Nenhum Quarto Selecionado</option>
+                    <option value="Sol">Sol</option>
+                    <option value="Master 1">Master 1</option>
+                    <option value="master 2">master 2</option>
+                </select>
             </div>
             <div id="m2" hidden>
                 <input id="nome" name="nome" type="text" placeholder="Nome do Passante">
             </div>
 
             <h2 id="tittle">Pratos</h2>
-            <select name="prato1" id="prato1">
-                <option value="0">Nenhum</option>
-                <option id="uppercase" disabled value="0">Pasteis</option>
-                <option value="Pastel napolitano">Pastel napolitano</option>
-                <option value="Pastel de queijo">Pastel de queijo</option>
-                <option value="Pastel de carne">Pastel de carne</option>
-                <option id="uppercase" disabled value="0">Lanches</option>
-                <option value="Misto quente">Misto quente</option>
-                <option value="Cachorro quente">Cachorro quente</option>
-                <option value="Hambúrguer">Hambúrguer</option>
-                <option value="Desejos">Desejos</option>
-                <option id="uppercase" disabled value="0">Pestiscos</option>
-                <option value="Polvo a vinagrete">Polvo a vinagrete</option>
-                <option value="Tataki">Tataki</option>
-                <option value="Cevitche">Cevitche</option>
-                <option value="Lula dore">Lula dore</option>
-                <option value="Camarão dore">Camarão dore</option>
-                <option value="Camarão alho">Camarão alho</option>
-                <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
-                <option value="Frango a passarinho">Frango a passarinho</option>
-                <option value="Filé aperetivo">Filé aperetivo</option>
-                <option value="Fritas">Fritas</option>
-                <option value="Tabua de frios">Tabua de frios</option>
-                <option id="uppercase" disabled value="0">Frango</option>
-                <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
-                <option value="Frango a parmegiana">Frango a parmegiana</option>
-                <option value="Frango ao molho curry">Frango ao molho curry</option>
-                <option value="Strogonoff de frango">Strogonoff de frango</option>
-                <option id="uppercase" disabled value="0">Contra-filé</option>
-                <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
-                <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
-                <option value="Contra-filé a cavala">Contra-filé a cavala</option>
-                <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
-                <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
-                <option id="uppercase" disabled value="0">Saladas</option>
-                <option value="Salada grega">Salada grega</option>
-                <option value="Salada tropical">Salada tropical</option>
-                <option value="Salada sentinelas">Salada sentinelas</option>
-                <option id="uppercase" disabled value="0">Sopas</option>
-                <option value="Frutos do mar">Frutos do mar</option>
-                <option value="Do dia">Do dia</option>
-                <option id="uppercase" disabled value="0">Frutos do mar</option>
-                <option value="Peixes na brasa">Peixes na brasa</option>
-                <option value="Peixe frito">Peixe frito</option>
-                <option value="Peixe grelhado">Peixe grelhado</option>
-                <option value="Ao molho de camarão">Ao molho de camarão</option>
-                <option value="Camarão no abacaxi">Camarão no abacaxi</option>
-                <option value="Camarão ao catupiry">Camarão ao catupiry</option>
-                <option value="Camarão empanado">Camarão empanado</option>
-                <option value="Risoto">Risoto</option>
-                <option value="Moqueca">Moqueca</option>
-                <option id="uppercase" disabled value="0">Massas</option>
-                <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
-                <option value="Parisiense">Parisiense</option>
-                <option value="Primavera">Primavera</option>
-                <option value="Nhoque">Nhoque</option>
-                <option value="Rondelli">Rondelli</option>
-                <option value="Canelone">Canelone</option>
-                <option value="Raviolli">Raviolli</option>
-            </select>
-            <input id="q1" type="number" value="1" placeholder="Quantidade">
-            <input id="o1" type="text" placeholder="Observações">
+            <div class="divPratos">
+                <select name="prato1" id="prato1">
+                    <option value="0">Nenhum</option>
+                    <optgroup label="PASTÉIS">
+                        <option value="Pastel napolitano">Pastel napolitano</option>
+                        <option value="Pastel de queijo">Pastel de queijo</option>
+                        <option value="Pastel de carne">Pastel de carne</option>
+                    </optgroup>
+
+                    <optgroup label="LANCHES">
+                        <option value="Misto quente">Misto quente</option>
+                        <option value="Cachorro quente">Cachorro quente</option>
+                        <option value="Hambúrguer">Hambúrguer</option>
+                        <option value="Desejos">Desejos</option>
+                    </optgroup>
+
+                    <optgroup label="PETISCOS">
+                        <option value="Polvo a vinagrete">Polvo a vinagrete</option>
+                        <option value="Tataki">Tataki</option>
+                        <option value="Cevitche">Cevitche</option>
+                        <option value="Lula dore">Lula dore</option>
+                        <option value="Camarão dore">Camarão dore</option>
+                        <option value="Camarão alho">Camarão alho</option>
+                        <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
+                        <option value="Frango a passarinho">Frango a passarinho</option>
+                        <option value="Filé aperetivo">Filé aperetivo</option>
+                        <option value="Fritas">Fritas</option>
+                        <option value="Tabua de frios">Tabua de frios</option>
+                    </optgroup>
+
+                    <optgroup label="FRANGO">
+                        <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
+                        <option value="Frango a parmegiana">Frango a parmegiana</option>
+                        <option value="Frango ao molho curry">Frango ao molho curry</option>
+                        <option value="Strogonoff de frango">Strogonoff de frango</option>
+                    </optgroup>
+                    <optgroup label="CONTRA-FILÉ">
+                        <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
+                        <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
+                        <option value="Contra-filé a cavala">Contra-filé a cavala</option>
+                        <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
+                        <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
+                    </optgroup>
+
+                    <optgroup label="SALADAS">
+                        <option value="Salada grega">Salada grega</option>
+                        <option value="Salada tropical">Salada tropical</option>
+                        <option value="Salada sentinelas">Salada sentinelas</option>
+                    </optgroup>
+
+                    <optgroup label="SOPAS">
+                        <option value="Frutos do mar">Frutos do mar</option>
+                        <option value="Do dia">Do dia</option>
+                    </optgroup>
+
+                    <optgroup label="FRUTOS DO MAR">
+                        <option value="Peixes na brasa">Peixes na brasa</option>
+                        <option value="Peixe frito">Peixe frito</option>
+                        <option value="Peixe grelhado">Peixe grelhado</option>
+                        <option value="Ao molho de camarão">Ao molho de camarão</option>
+                        <option value="Camarão no abacaxi">Camarão no abacaxi</option>
+                        <option value="Camarão ao catupiry">Camarão ao catupiry</option>
+                        <option value="Camarão empanado">Camarão empanado</option>
+                        <option value="Risoto">Risoto</option>
+                        <option value="Moqueca">Moqueca</option>
+                    </optgroup>
+
+                    <optgroup label="MASSAS">
+                        <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
+                        <option value="Parisiense">Parisiense</option>
+                        <option value="Primavera">Primavera</option>
+                        <option value="Nhoque">Nhoque</option>
+                        <option value="Rondelli">Rondelli</option>
+                        <option value="Canelone">Canelone</option>
+                        <option value="Raviolli">Raviolli</option>
+                    </optgroup>
+                </select>
+                <select class="q" id="q1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input id="o1" type="text" placeholder="Observações">
+            </div>
 
 
-            <select name="prato2" id="prato2">
-                <option value="0">Nenhum</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pasteis</option>
-                <option value="Pastel napolitano">Pastel napolitano</option>
-                <option value="Pastel de queijo">Pastel de queijo</option>
-                <option value="Pastel de carne">Pastel de carne</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Lanches</option>
-                <option value="Misto quente">Misto quente</option>
-                <option value="Cachorro quente">Cachorro quente</option>
-                <option value="Hambúrguer">Hambúrguer</option>
-                <option value="Desejos">Desejos</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pestiscos</option>
-                <option value="Polvo a vinagrete">Polvo a vinagrete</option>
-                <option value="Tataki">Tataki</option>
-                <option value="Cevitche">Cevitche</option>
-                <option value="Lula dore">Lula dore</option>
-                <option value="Camarão dore">Camarão dore</option>
-                <option value="Camarão alho">Camarão alho</option>
-                <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
-                <option value="Frango a passarinho">Frango a passarinho</option>
-                <option value="Filé aperetivo">Filé aperetivo</option>
-                <option value="Fritas">Fritas</option>
-                <option value="Tabua de frios">Tabua de frios</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frango</option>
-                <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
-                <option value="Frango a parmegiana">Frango a parmegiana</option>
-                <option value="Frango ao molho curry">Frango ao molho curry</option>
-                <option value="Strogonoff de frango">Strogonoff de frango</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Contra-filé</option>
-                <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
-                <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
-                <option value="Contra-filé a cavala">Contra-filé a cavala</option>
-                <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
-                <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Saladas</option>
-                <option value="Salada grega">Salada grega</option>
-                <option value="Salada tropical">Salada tropical</option>
-                <option value="Salada sentinelas">Salada sentinelas</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Sopas</option>
-                <option value="Frutos do mar">Frutos do mar</option>
-                <option value="Do dia">Do dia</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frutos do mar</option>
-                <option value="Peixes na brasa">Peixes na brasa</option>
-                <option value="Peixe frito">Peixe frito</option>
-                <option value="Peixe grelhado">Peixe grelhado</option>
-                <option value="Ao molho de camarão">Ao molho de camarão</option>
-                <option value="Camarão no abacaxi">Camarão no abacaxi</option>
-                <option value="Camarão ao catupiry">Camarão ao catupiry</option>
-                <option value="Camarão empanado">Camarão empanado</option>
-                <option value="Risoto">Risoto</option>
-                <option value="Moqueca">Moqueca</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Massas</option>
-                <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
-                <option value="Parisiense">Parisiense</option>
-                <option value="Primavera">Primavera</option>
-                <option value="Nhoque">Nhoque</option>
-                <option value="Rondelli">Rondelli</option>
-                <option value="Canelone">Canelone</option>
-                <option value="Raviolli">Raviolli</option>
-            </select>
-            <input id="q2" type="number"value="1" placeholder="Quantidade">
-            <input id="o2" type="text" placeholder="Observações">
+            <div class="divPratos">
+                <select name="prato2" id="prato2">
+                    <option value="0">Nenhum</option>
+                    <optgroup label="PASTÉIS">
+                        <option value="Pastel napolitano">Pastel napolitano</option>
+                        <option value="Pastel de queijo">Pastel de queijo</option>
+                        <option value="Pastel de carne">Pastel de carne</option>
+                    </optgroup>
+
+                    <optgroup label="LANCHES">
+                        <option value="Misto quente">Misto quente</option>
+                        <option value="Cachorro quente">Cachorro quente</option>
+                        <option value="Hambúrguer">Hambúrguer</option>
+                        <option value="Desejos">Desejos</option>
+                    </optgroup>
+
+                    <optgroup label="PETISCOS">
+                        <option value="Polvo a vinagrete">Polvo a vinagrete</option>
+                        <option value="Tataki">Tataki</option>
+                        <option value="Cevitche">Cevitche</option>
+                        <option value="Lula dore">Lula dore</option>
+                        <option value="Camarão dore">Camarão dore</option>
+                        <option value="Camarão alho">Camarão alho</option>
+                        <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
+                        <option value="Frango a passarinho">Frango a passarinho</option>
+                        <option value="Filé aperetivo">Filé aperetivo</option>
+                        <option value="Fritas">Fritas</option>
+                        <option value="Tabua de frios">Tabua de frios</option>
+                    </optgroup>
+
+                    <optgroup label="FRANGO">
+                        <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
+                        <option value="Frango a parmegiana">Frango a parmegiana</option>
+                        <option value="Frango ao molho curry">Frango ao molho curry</option>
+                        <option value="Strogonoff de frango">Strogonoff de frango</option>
+                    </optgroup>
+                    <optgroup label="CONTRA-FILÉ">
+                        <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
+                        <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
+                        <option value="Contra-filé a cavala">Contra-filé a cavala</option>
+                        <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
+                        <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
+                    </optgroup>
+
+                    <optgroup label="SALADAS">
+                        <option value="Salada grega">Salada grega</option>
+                        <option value="Salada tropical">Salada tropical</option>
+                        <option value="Salada sentinelas">Salada sentinelas</option>
+                    </optgroup>
+
+                    <optgroup label="SOPAS">
+                        <option value="Frutos do mar">Frutos do mar</option>
+                        <option value="Do dia">Do dia</option>
+                    </optgroup>
+
+                    <optgroup label="FRUTOS DO MAR">
+                        <option value="Peixes na brasa">Peixes na brasa</option>
+                        <option value="Peixe frito">Peixe frito</option>
+                        <option value="Peixe grelhado">Peixe grelhado</option>
+                        <option value="Ao molho de camarão">Ao molho de camarão</option>
+                        <option value="Camarão no abacaxi">Camarão no abacaxi</option>
+                        <option value="Camarão ao catupiry">Camarão ao catupiry</option>
+                        <option value="Camarão empanado">Camarão empanado</option>
+                        <option value="Risoto">Risoto</option>
+                        <option value="Moqueca">Moqueca</option>
+                    </optgroup>
+
+                    <optgroup label="MASSAS">
+                        <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
+                        <option value="Parisiense">Parisiense</option>
+                        <option value="Primavera">Primavera</option>
+                        <option value="Nhoque">Nhoque</option>
+                        <option value="Rondelli">Rondelli</option>
+                        <option value="Canelone">Canelone</option>
+                        <option value="Raviolli">Raviolli</option>
+                    </optgroup>
+                </select>
+                <select class="q" id="q2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input id="o2" type="text" placeholder="Observações">
+            </div>
 
 
 
             <select name="prato3" id="prato3">
                 <option value="0">Nenhum</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pasteis</option>
-                <option value="Pastel napolitano">Pastel napolitano</option>
-                <option value="Pastel de queijo">Pastel de queijo</option>
-                <option value="Pastel de carne">Pastel de carne</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Lanches</option>
-                <option value="Misto quente">Misto quente</option>
-                <option value="Cachorro quente">Cachorro quente</option>
-                <option value="Hambúrguer">Hambúrguer</option>
-                <option value="Desejos">Desejos</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pestiscos</option>
-                <option value="Polvo a vinagrete">Polvo a vinagrete</option>
-                <option value="Tataki">Tataki</option>
-                <option value="Cevitche">Cevitche</option>
-                <option value="Lula dore">Lula dore</option>
-                <option value="Camarão dore">Camarão dore</option>
-                <option value="Camarão alho">Camarão alho</option>
-                <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
-                <option value="Frango a passarinho">Frango a passarinho</option>
-                <option value="Filé aperetivo">Filé aperetivo</option>
-                <option value="Fritas">Fritas</option>
-                <option value="Tabua de frios">Tabua de frios</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frango</option>
-                <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
-                <option value="Frango a parmegiana">Frango a parmegiana</option>
-                <option value="Frango ao molho curry">Frango ao molho curry</option>
-                <option value="Strogonoff de frango">Strogonoff de frango</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Contra-filé</option>
-                <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
-                <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
-                <option value="Contra-filé a cavala">Contra-filé a cavala</option>
-                <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
-                <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Saladas</option>
-                <option value="Salada grega">Salada grega</option>
-                <option value="Salada tropical">Salada tropical</option>
-                <option value="Salada sentinelas">Salada sentinelas</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Sopas</option>
-                <option value="Frutos do mar">Frutos do mar</option>
-                <option value="Do dia">Do dia</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frutos do mar</option>
-                <option value="Peixes na brasa">Peixes na brasa</option>
-                <option value="Peixe frito">Peixe frito</option>
-                <option value="Peixe grelhado">Peixe grelhado</option>
-                <option value="Ao molho de camarão">Ao molho de camarão</option>
-                <option value="Camarão no abacaxi">Camarão no abacaxi</option>
-                <option value="Camarão ao catupiry">Camarão ao catupiry</option>
-                <option value="Camarão empanado">Camarão empanado</option>
-                <option value="Risoto">Risoto</option>
-                <option value="Moqueca">Moqueca</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Massas</option>
-                <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
-                <option value="Parisiense">Parisiense</option>
-                <option value="Primavera">Primavera</option>
-                <option value="Nhoque">Nhoque</option>
-                <option value="Rondelli">Rondelli</option>
-                <option value="Canelone">Canelone</option>
-                <option value="Raviolli">Raviolli</option>
+                <optgroup label="PASTÉIS">
+                    <option value="Pastel napolitano">Pastel napolitano</option>
+                    <option value="Pastel de queijo">Pastel de queijo</option>
+                    <option value="Pastel de carne">Pastel de carne</option>
+                </optgroup>
+
+                <optgroup label="LANCHES">
+                    <option value="Misto quente">Misto quente</option>
+                    <option value="Cachorro quente">Cachorro quente</option>
+                    <option value="Hambúrguer">Hambúrguer</option>
+                    <option value="Desejos">Desejos</option>
+                </optgroup>
+
+                <optgroup label="PETISCOS">
+                    <option value="Polvo a vinagrete">Polvo a vinagrete</option>
+                    <option value="Tataki">Tataki</option>
+                    <option value="Cevitche">Cevitche</option>
+                    <option value="Lula dore">Lula dore</option>
+                    <option value="Camarão dore">Camarão dore</option>
+                    <option value="Camarão alho">Camarão alho</option>
+                    <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
+                    <option value="Frango a passarinho">Frango a passarinho</option>
+                    <option value="Filé aperetivo">Filé aperetivo</option>
+                    <option value="Fritas">Fritas</option>
+                    <option value="Tabua de frios">Tabua de frios</option>
+                </optgroup>
+
+                <optgroup label="FRANGO">
+                    <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
+                    <option value="Frango a parmegiana">Frango a parmegiana</option>
+                    <option value="Frango ao molho curry">Frango ao molho curry</option>
+                    <option value="Strogonoff de frango">Strogonoff de frango</option>
+                </optgroup>
+                <optgroup label="CONTRA-FILÉ">
+                    <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
+                    <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
+                    <option value="Contra-filé a cavala">Contra-filé a cavala</option>
+                    <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
+                    <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
+                </optgroup>
+
+                <optgroup label="SALADAS">
+                    <option value="Salada grega">Salada grega</option>
+                    <option value="Salada tropical">Salada tropical</option>
+                    <option value="Salada sentinelas">Salada sentinelas</option>
+                </optgroup>
+
+                <optgroup label="SOPAS">
+                    <option value="Frutos do mar">Frutos do mar</option>
+                    <option value="Do dia">Do dia</option>
+                </optgroup>
+
+                <optgroup label="FRUTOS DO MAR">
+                    <option value="Peixes na brasa">Peixes na brasa</option>
+                    <option value="Peixe frito">Peixe frito</option>
+                    <option value="Peixe grelhado">Peixe grelhado</option>
+                    <option value="Ao molho de camarão">Ao molho de camarão</option>
+                    <option value="Camarão no abacaxi">Camarão no abacaxi</option>
+                    <option value="Camarão ao catupiry">Camarão ao catupiry</option>
+                    <option value="Camarão empanado">Camarão empanado</option>
+                    <option value="Risoto">Risoto</option>
+                    <option value="Moqueca">Moqueca</option>
+                </optgroup>
+
+                <optgroup label="MASSAS">
+                    <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
+                    <option value="Parisiense">Parisiense</option>
+                    <option value="Primavera">Primavera</option>
+                    <option value="Nhoque">Nhoque</option>
+                    <option value="Rondelli">Rondelli</option>
+                    <option value="Canelone">Canelone</option>
+                    <option value="Raviolli">Raviolli</option>
+                </optgroup>
             </select>
-            <input id="q3" type="number" value="1" placeholder="Quantidade">
+            <select class="q" id="q3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
             <input id="o3" type="text" placeholder="Observações">
 
 
 
             <select name="prato4" id="prato4">
                 <option value="0">Nenhum</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pasteis</option>
-                <option value="Pastel napolitano">Pastel napolitano</option>
-                <option value="Pastel de queijo">Pastel de queijo</option>
-                <option value="Pastel de carne">Pastel de carne</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Lanches</option>
-                <option value="Misto quente">Misto quente</option>
-                <option value="Cachorro quente">Cachorro quente</option>
-                <option value="Hambúrguer">Hambúrguer</option>
-                <option value="Desejos">Desejos</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pestiscos</option>
-                <option value="Polvo a vinagrete">Polvo a vinagrete</option>
-                <option value="Tataki">Tataki</option>
-                <option value="Cevitche">Cevitche</option>
-                <option value="Lula dore">Lula dore</option>
-                <option value="Camarão dore">Camarão dore</option>
-                <option value="Camarão alho">Camarão alho</option>
-                <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
-                <option value="Frango a passarinho">Frango a passarinho</option>
-                <option value="Filé aperetivo">Filé aperetivo</option>
-                <option value="Fritas">Fritas</option>
-                <option value="Tabua de frios">Tabua de frios</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frango</option>
-                <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
-                <option value="Frango a parmegiana">Frango a parmegiana</option>
-                <option value="Frango ao molho curry">Frango ao molho curry</option>
-                <option value="Strogonoff de frango">Strogonoff de frango</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Contra-filé</option>
-                <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
-                <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
-                <option value="Contra-filé a cavala">Contra-filé a cavala</option>
-                <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
-                <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Saladas</option>
-                <option value="Salada grega">Salada grega</option>
-                <option value="Salada tropical">Salada tropical</option>
-                <option value="Salada sentinelas">Salada sentinelas</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Sopas</option>
-                <option value="Frutos do mar">Frutos do mar</option>
-                <option value="Do dia">Do dia</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frutos do mar</option>
-                <option value="Peixes na brasa">Peixes na brasa</option>
-                <option value="Peixe frito">Peixe frito</option>
-                <option value="Peixe grelhado">Peixe grelhado</option>
-                <option value="Ao molho de camarão">Ao molho de camarão</option>
-                <option value="Camarão no abacaxi">Camarão no abacaxi</option>
-                <option value="Camarão ao catupiry">Camarão ao catupiry</option>
-                <option value="Camarão empanado">Camarão empanado</option>
-                <option value="Risoto">Risoto</option>
-                <option value="Moqueca">Moqueca</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Massas</option>
-                <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
-                <option value="Parisiense">Parisiense</option>
-                <option value="Primavera">Primavera</option>
-                <option value="Nhoque">Nhoque</option>
-                <option value="Rondelli">Rondelli</option>
-                <option value="Canelone">Canelone</option>
-                <option value="Raviolli">Raviolli</option>
+                <optgroup label="PASTÉIS">
+                    <option value="Pastel napolitano">Pastel napolitano</option>
+                    <option value="Pastel de queijo">Pastel de queijo</option>
+                    <option value="Pastel de carne">Pastel de carne</option>
+                </optgroup>
+
+                <optgroup label="LANCHES">
+                    <option value="Misto quente">Misto quente</option>
+                    <option value="Cachorro quente">Cachorro quente</option>
+                    <option value="Hambúrguer">Hambúrguer</option>
+                    <option value="Desejos">Desejos</option>
+                </optgroup>
+
+                <optgroup label="PETISCOS">
+                    <option value="Polvo a vinagrete">Polvo a vinagrete</option>
+                    <option value="Tataki">Tataki</option>
+                    <option value="Cevitche">Cevitche</option>
+                    <option value="Lula dore">Lula dore</option>
+                    <option value="Camarão dore">Camarão dore</option>
+                    <option value="Camarão alho">Camarão alho</option>
+                    <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
+                    <option value="Frango a passarinho">Frango a passarinho</option>
+                    <option value="Filé aperetivo">Filé aperetivo</option>
+                    <option value="Fritas">Fritas</option>
+                    <option value="Tabua de frios">Tabua de frios</option>
+                </optgroup>
+
+                <optgroup label="FRANGO">
+                    <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
+                    <option value="Frango a parmegiana">Frango a parmegiana</option>
+                    <option value="Frango ao molho curry">Frango ao molho curry</option>
+                    <option value="Strogonoff de frango">Strogonoff de frango</option>
+                </optgroup>
+                <optgroup label="CONTRA-FILÉ">
+                    <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
+                    <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
+                    <option value="Contra-filé a cavala">Contra-filé a cavala</option>
+                    <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
+                    <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
+                </optgroup>
+
+                <optgroup label="SALADAS">
+                    <option value="Salada grega">Salada grega</option>
+                    <option value="Salada tropical">Salada tropical</option>
+                    <option value="Salada sentinelas">Salada sentinelas</option>
+                </optgroup>
+
+                <optgroup label="SOPAS">
+                    <option value="Frutos do mar">Frutos do mar</option>
+                    <option value="Do dia">Do dia</option>
+                </optgroup>
+
+                <optgroup label="FRUTOS DO MAR">
+                    <option value="Peixes na brasa">Peixes na brasa</option>
+                    <option value="Peixe frito">Peixe frito</option>
+                    <option value="Peixe grelhado">Peixe grelhado</option>
+                    <option value="Ao molho de camarão">Ao molho de camarão</option>
+                    <option value="Camarão no abacaxi">Camarão no abacaxi</option>
+                    <option value="Camarão ao catupiry">Camarão ao catupiry</option>
+                    <option value="Camarão empanado">Camarão empanado</option>
+                    <option value="Risoto">Risoto</option>
+                    <option value="Moqueca">Moqueca</option>
+                </optgroup>
+
+                <optgroup label="MASSAS">
+                    <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
+                    <option value="Parisiense">Parisiense</option>
+                    <option value="Primavera">Primavera</option>
+                    <option value="Nhoque">Nhoque</option>
+                    <option value="Rondelli">Rondelli</option>
+                    <option value="Canelone">Canelone</option>
+                    <option value="Raviolli">Raviolli</option>
+                </optgroup>
             </select>
-            
-            <input id="q4" type="number" value="1" placeholder="Quantidade">
             <input id="o4" type="text" placeholder="Observações">
 
 
 
             <select name="prato5" id="prato5">
                 <option value="0">Nenhum</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pasteis</option>
-                <option value="Pastel napolitano">Pastel napolitano</option>
-                <option value="Pastel de queijo">Pastel de queijo</option>
-                <option value="Pastel de carne">Pastel de carne</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Lanches</option>
-                <option value="Misto quente">Misto quente</option>
-                <option value="Cachorro quente">Cachorro quente</option>
-                <option value="Hambúrguer">Hambúrguer</option>
-                <option value="Desejos">Desejos</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pestiscos</option>
-                <option value="Polvo a vinagrete">Polvo a vinagrete</option>
-                <option value="Tataki">Tataki</option>
-                <option value="Cevitche">Cevitche</option>
-                <option value="Lula dore">Lula dore</option>
-                <option value="Camarão dore">Camarão dore</option>
-                <option value="Camarão alho">Camarão alho</option>
-                <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
-                <option value="Frango a passarinho">Frango a passarinho</option>
-                <option value="Filé aperetivo">Filé aperetivo</option>
-                <option value="Fritas">Fritas</option>
-                <option value="Tabua de frios">Tabua de frios</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frango</option>
-                <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
-                <option value="Frango a parmegiana">Frango a parmegiana</option>
-                <option value="Frango ao molho curry">Frango ao molho curry</option>
-                <option value="Strogonoff de frango">Strogonoff de frango</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Contra-filé</option>
-                <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
-                <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
-                <option value="Contra-filé a cavala">Contra-filé a cavala</option>
-                <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
-                <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Saladas</option>
-                <option value="Salada grega">Salada grega</option>
-                <option value="Salada tropical">Salada tropical</option>
-                <option value="Salada sentinelas">Salada sentinelas</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Sopas</option>
-                <option value="Frutos do mar">Frutos do mar</option>
-                <option value="Do dia">Do dia</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frutos do mar</option>
-                <option value="Peixes na brasa">Peixes na brasa</option>
-                <option value="Peixe frito">Peixe frito</option>
-                <option value="Peixe grelhado">Peixe grelhado</option>
-                <option value="Ao molho de camarão">Ao molho de camarão</option>
-                <option value="Camarão no abacaxi">Camarão no abacaxi</option>
-                <option value="Camarão ao catupiry">Camarão ao catupiry</option>
-                <option value="Camarão empanado">Camarão empanado</option>
-                <option value="Risoto">Risoto</option>
-                <option value="Moqueca">Moqueca</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Massas</option>
-                <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
-                <option value="Parisiense">Parisiense</option>
-                <option value="Primavera">Primavera</option>
-                <option value="Nhoque">Nhoque</option>
-                <option value="Rondelli">Rondelli</option>
-                <option value="Canelone">Canelone</option>
-                <option value="Raviolli">Raviolli</option>
+                <optgroup label="PASTÉIS">
+                    <option value="Pastel napolitano">Pastel napolitano</option>
+                    <option value="Pastel de queijo">Pastel de queijo</option>
+                    <option value="Pastel de carne">Pastel de carne</option>
+                </optgroup>
+
+                <optgroup label="LANCHES">
+                    <option value="Misto quente">Misto quente</option>
+                    <option value="Cachorro quente">Cachorro quente</option>
+                    <option value="Hambúrguer">Hambúrguer</option>
+                    <option value="Desejos">Desejos</option>
+                </optgroup>
+
+                <optgroup label="PETISCOS">
+                    <option value="Polvo a vinagrete">Polvo a vinagrete</option>
+                    <option value="Tataki">Tataki</option>
+                    <option value="Cevitche">Cevitche</option>
+                    <option value="Lula dore">Lula dore</option>
+                    <option value="Camarão dore">Camarão dore</option>
+                    <option value="Camarão alho">Camarão alho</option>
+                    <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
+                    <option value="Frango a passarinho">Frango a passarinho</option>
+                    <option value="Filé aperetivo">Filé aperetivo</option>
+                    <option value="Fritas">Fritas</option>
+                    <option value="Tabua de frios">Tabua de frios</option>
+                </optgroup>
+
+                <optgroup label="FRANGO">
+                    <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
+                    <option value="Frango a parmegiana">Frango a parmegiana</option>
+                    <option value="Frango ao molho curry">Frango ao molho curry</option>
+                    <option value="Strogonoff de frango">Strogonoff de frango</option>
+                </optgroup>
+                <optgroup label="CONTRA-FILÉ">
+                    <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
+                    <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
+                    <option value="Contra-filé a cavala">Contra-filé a cavala</option>
+                    <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
+                    <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
+                </optgroup>
+
+                <optgroup label="SALADAS">
+                    <option value="Salada grega">Salada grega</option>
+                    <option value="Salada tropical">Salada tropical</option>
+                    <option value="Salada sentinelas">Salada sentinelas</option>
+                </optgroup>
+
+                <optgroup label="SOPAS">
+                    <option value="Frutos do mar">Frutos do mar</option>
+                    <option value="Do dia">Do dia</option>
+                </optgroup>
+
+                <optgroup label="FRUTOS DO MAR">
+                    <option value="Peixes na brasa">Peixes na brasa</option>
+                    <option value="Peixe frito">Peixe frito</option>
+                    <option value="Peixe grelhado">Peixe grelhado</option>
+                    <option value="Ao molho de camarão">Ao molho de camarão</option>
+                    <option value="Camarão no abacaxi">Camarão no abacaxi</option>
+                    <option value="Camarão ao catupiry">Camarão ao catupiry</option>
+                    <option value="Camarão empanado">Camarão empanado</option>
+                    <option value="Risoto">Risoto</option>
+                    <option value="Moqueca">Moqueca</option>
+                </optgroup>
+
+                <optgroup label="MASSAS">
+                    <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
+                    <option value="Parisiense">Parisiense</option>
+                    <option value="Primavera">Primavera</option>
+                    <option value="Nhoque">Nhoque</option>
+                    <option value="Rondelli">Rondelli</option>
+                    <option value="Canelone">Canelone</option>
+                    <option value="Raviolli">Raviolli</option>
+                </optgroup>
             </select>
             
-            <input id="q5" type="number" value="1" placeholder="Quantidade">
+            <select class="q" id="q5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
             <input id="o5" type="text" placeholder="Observações">
 
 
@@ -362,193 +493,274 @@
 
             <select name="prato6" id="prato6">
                 <option value="0">Nenhum</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pasteis</option>
-                <option value="Pastel napolitano">Pastel napolitano</option>
-                <option value="Pastel de queijo">Pastel de queijo</option>
-                <option value="Pastel de carne">Pastel de carne</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Lanches</option>
-                <option value="Misto quente">Misto quente</option>
-                <option value="Cachorro quente">Cachorro quente</option>
-                <option value="Hambúrguer">Hambúrguer</option>
-                <option value="Desejos">Desejos</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pestiscos</option>
-                <option value="Polvo a vinagrete">Polvo a vinagrete</option>
-                <option value="Tataki">Tataki</option>
-                <option value="Cevitche">Cevitche</option>
-                <option value="Lula dore">Lula dore</option>
-                <option value="Camarão dore">Camarão dore</option>
-                <option value="Camarão alho">Camarão alho</option>
-                <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
-                <option value="Frango a passarinho">Frango a passarinho</option>
-                <option value="Filé aperetivo">Filé aperetivo</option>
-                <option value="Fritas">Fritas</option>
-                <option value="Tabua de frios">Tabua de frios</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frango</option>
-                <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
-                <option value="Frango a parmegiana">Frango a parmegiana</option>
-                <option value="Frango ao molho curry">Frango ao molho curry</option>
-                <option value="Strogonoff de frango">Strogonoff de frango</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Contra-filé</option>
-                <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
-                <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
-                <option value="Contra-filé a cavala">Contra-filé a cavala</option>
-                <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
-                <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Saladas</option>
-                <option value="Salada grega">Salada grega</option>
-                <option value="Salada tropical">Salada tropical</option>
-                <option value="Salada sentinelas">Salada sentinelas</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Sopas</option>
-                <option value="Frutos do mar">Frutos do mar</option>
-                <option value="Do dia">Do dia</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frutos do mar</option>
-                <option value="Peixes na brasa">Peixes na brasa</option>
-                <option value="Peixe frito">Peixe frito</option>
-                <option value="Peixe grelhado">Peixe grelhado</option>
-                <option value="Ao molho de camarão">Ao molho de camarão</option>
-                <option value="Camarão no abacaxi">Camarão no abacaxi</option>
-                <option value="Camarão ao catupiry">Camarão ao catupiry</option>
-                <option value="Camarão empanado">Camarão empanado</option>
-                <option value="Risoto">Risoto</option>
-                <option value="Moqueca">Moqueca</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Massas</option>
-                <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
-                <option value="Parisiense">Parisiense</option>
-                <option value="Primavera">Primavera</option>
-                <option value="Nhoque">Nhoque</option>
-                <option value="Rondelli">Rondelli</option>
-                <option value="Canelone">Canelone</option>
-                <option value="Raviolli">Raviolli</option>
+                <optgroup label="PASTÉIS">
+                    <option value="Pastel napolitano">Pastel napolitano</option>
+                    <option value="Pastel de queijo">Pastel de queijo</option>
+                    <option value="Pastel de carne">Pastel de carne</option>
+                </optgroup>
+
+                <optgroup label="LANCHES">
+                    <option value="Misto quente">Misto quente</option>
+                    <option value="Cachorro quente">Cachorro quente</option>
+                    <option value="Hambúrguer">Hambúrguer</option>
+                    <option value="Desejos">Desejos</option>
+                </optgroup>
+
+                <optgroup label="PETISCOS">
+                    <option value="Polvo a vinagrete">Polvo a vinagrete</option>
+                    <option value="Tataki">Tataki</option>
+                    <option value="Cevitche">Cevitche</option>
+                    <option value="Lula dore">Lula dore</option>
+                    <option value="Camarão dore">Camarão dore</option>
+                    <option value="Camarão alho">Camarão alho</option>
+                    <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
+                    <option value="Frango a passarinho">Frango a passarinho</option>
+                    <option value="Filé aperetivo">Filé aperetivo</option>
+                    <option value="Fritas">Fritas</option>
+                    <option value="Tabua de frios">Tabua de frios</option>
+                </optgroup>
+
+                <optgroup label="FRANGO">
+                    <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
+                    <option value="Frango a parmegiana">Frango a parmegiana</option>
+                    <option value="Frango ao molho curry">Frango ao molho curry</option>
+                    <option value="Strogonoff de frango">Strogonoff de frango</option>
+                </optgroup>
+                <optgroup label="CONTRA-FILÉ">
+                    <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
+                    <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
+                    <option value="Contra-filé a cavala">Contra-filé a cavala</option>
+                    <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
+                    <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
+                </optgroup>
+
+                <optgroup label="SALADAS">
+                    <option value="Salada grega">Salada grega</option>
+                    <option value="Salada tropical">Salada tropical</option>
+                    <option value="Salada sentinelas">Salada sentinelas</option>
+                </optgroup>
+
+                <optgroup label="SOPAS">
+                    <option value="Frutos do mar">Frutos do mar</option>
+                    <option value="Do dia">Do dia</option>
+                </optgroup>
+
+                <optgroup label="FRUTOS DO MAR">
+                    <option value="Peixes na brasa">Peixes na brasa</option>
+                    <option value="Peixe frito">Peixe frito</option>
+                    <option value="Peixe grelhado">Peixe grelhado</option>
+                    <option value="Ao molho de camarão">Ao molho de camarão</option>
+                    <option value="Camarão no abacaxi">Camarão no abacaxi</option>
+                    <option value="Camarão ao catupiry">Camarão ao catupiry</option>
+                    <option value="Camarão empanado">Camarão empanado</option>
+                    <option value="Risoto">Risoto</option>
+                    <option value="Moqueca">Moqueca</option>
+                </optgroup>
+
+                <optgroup label="MASSAS">
+                    <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
+                    <option value="Parisiense">Parisiense</option>
+                    <option value="Primavera">Primavera</option>
+                    <option value="Nhoque">Nhoque</option>
+                    <option value="Rondelli">Rondelli</option>
+                    <option value="Canelone">Canelone</option>
+                    <option value="Raviolli">Raviolli</option>
+                </optgroup>
             </select>
-            <input id="q6" type="number" value="1" placeholder="Quantidade">
+            <select class="q" id="q6">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
             <input id="o6" type="text" placeholder="Observações">
 
             <select name="prato7" id="prato7">
                 <option value="0">Nenhum</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pasteis</option>
-                <option value="Pastel napolitano">Pastel napolitano</option>
-                <option value="Pastel de queijo">Pastel de queijo</option>
-                <option value="Pastel de carne">Pastel de carne</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Lanches</option>
-                <option value="Misto quente">Misto quente</option>
-                <option value="Cachorro quente">Cachorro quente</option>
-                <option value="Hambúrguer">Hambúrguer</option>
-                <option value="Desejos">Desejos</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pestiscos</option>
-                <option value="Polvo a vinagrete">Polvo a vinagrete</option>
-                <option value="Tataki">Tataki</option>
-                <option value="Cevitche">Cevitche</option>
-                <option value="Lula dore">Lula dore</option>
-                <option value="Camarão dore">Camarão dore</option>
-                <option value="Camarão alho">Camarão alho</option>
-                <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
-                <option value="Frango a passarinho">Frango a passarinho</option>
-                <option value="Filé aperetivo">Filé aperetivo</option>
-                <option value="Fritas">Fritas</option>
-                <option value="Tabua de frios">Tabua de frios</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frango</option>
-                <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
-                <option value="Frango a parmegiana">Frango a parmegiana</option>
-                <option value="Frango ao molho curry">Frango ao molho curry</option>
-                <option value="Strogonoff de frango">Strogonoff de frango</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Contra-filé</option>
-                <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
-                <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
-                <option value="Contra-filé a cavala">Contra-filé a cavala</option>
-                <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
-                <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Saladas</option>
-                <option value="Salada grega">Salada grega</option>
-                <option value="Salada tropical">Salada tropical</option>
-                <option value="Salada sentinelas">Salada sentinelas</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Sopas</option>
-                <option value="Frutos do mar">Frutos do mar</option>
-                <option value="Do dia">Do dia</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frutos do mar</option>
-                <option value="Peixes na brasa">Peixes na brasa</option>
-                <option value="Peixe frito">Peixe frito</option>
-                <option value="Peixe grelhado">Peixe grelhado</option>
-                <option value="Ao molho de camarão">Ao molho de camarão</option>
-                <option value="Camarão no abacaxi">Camarão no abacaxi</option>
-                <option value="Camarão ao catupiry">Camarão ao catupiry</option>
-                <option value="Camarão empanado">Camarão empanado</option>
-                <option value="Risoto">Risoto</option>
-                <option value="Moqueca">Moqueca</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Massas</option>
-                <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
-                <option value="Parisiense">Parisiense</option>
-                <option value="Primavera">Primavera</option>
-                <option value="Nhoque">Nhoque</option>
-                <option value="Rondelli">Rondelli</option>
-                <option value="Canelone">Canelone</option>
-                <option value="Raviolli">Raviolli</option>
+                <optgroup label="PASTÉIS">
+                    <option value="Pastel napolitano">Pastel napolitano</option>
+                    <option value="Pastel de queijo">Pastel de queijo</option>
+                    <option value="Pastel de carne">Pastel de carne</option>
+                </optgroup>
+
+                <optgroup label="LANCHES">
+                    <option value="Misto quente">Misto quente</option>
+                    <option value="Cachorro quente">Cachorro quente</option>
+                    <option value="Hambúrguer">Hambúrguer</option>
+                    <option value="Desejos">Desejos</option>
+                </optgroup>
+
+                <optgroup label="PETISCOS">
+                    <option value="Polvo a vinagrete">Polvo a vinagrete</option>
+                    <option value="Tataki">Tataki</option>
+                    <option value="Cevitche">Cevitche</option>
+                    <option value="Lula dore">Lula dore</option>
+                    <option value="Camarão dore">Camarão dore</option>
+                    <option value="Camarão alho">Camarão alho</option>
+                    <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
+                    <option value="Frango a passarinho">Frango a passarinho</option>
+                    <option value="Filé aperetivo">Filé aperetivo</option>
+                    <option value="Fritas">Fritas</option>
+                    <option value="Tabua de frios">Tabua de frios</option>
+                </optgroup>
+
+                <optgroup label="FRANGO">
+                    <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
+                    <option value="Frango a parmegiana">Frango a parmegiana</option>
+                    <option value="Frango ao molho curry">Frango ao molho curry</option>
+                    <option value="Strogonoff de frango">Strogonoff de frango</option>
+                </optgroup>
+                <optgroup label="CONTRA-FILÉ">
+                    <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
+                    <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
+                    <option value="Contra-filé a cavala">Contra-filé a cavala</option>
+                    <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
+                    <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
+                </optgroup>
+
+                <optgroup label="SALADAS">
+                    <option value="Salada grega">Salada grega</option>
+                    <option value="Salada tropical">Salada tropical</option>
+                    <option value="Salada sentinelas">Salada sentinelas</option>
+                </optgroup>
+
+                <optgroup label="SOPAS">
+                    <option value="Frutos do mar">Frutos do mar</option>
+                    <option value="Do dia">Do dia</option>
+                </optgroup>
+
+                <optgroup label="FRUTOS DO MAR">
+                    <option value="Peixes na brasa">Peixes na brasa</option>
+                    <option value="Peixe frito">Peixe frito</option>
+                    <option value="Peixe grelhado">Peixe grelhado</option>
+                    <option value="Ao molho de camarão">Ao molho de camarão</option>
+                    <option value="Camarão no abacaxi">Camarão no abacaxi</option>
+                    <option value="Camarão ao catupiry">Camarão ao catupiry</option>
+                    <option value="Camarão empanado">Camarão empanado</option>
+                    <option value="Risoto">Risoto</option>
+                    <option value="Moqueca">Moqueca</option>
+                </optgroup>
+
+                <optgroup label="MASSAS">
+                    <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
+                    <option value="Parisiense">Parisiense</option>
+                    <option value="Primavera">Primavera</option>
+                    <option value="Nhoque">Nhoque</option>
+                    <option value="Rondelli">Rondelli</option>
+                    <option value="Canelone">Canelone</option>
+                    <option value="Raviolli">Raviolli</option>
+                </optgroup>
             </select>
-            <input id="q7" type="number" value="1" placeholder="Quantidade">
+            <select class="q" id="q7">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
             <input id="o7" type="text" placeholder="Observações">
 
 
 
             <select name="prato8" id="prato8">
                 <option value="0">Nenhum</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pasteis</option>
-                <option value="Pastel napolitano">Pastel napolitano</option>
-                <option value="Pastel de queijo">Pastel de queijo</option>
-                <option value="Pastel de carne">Pastel de carne</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Lanches</option>
-                <option value="Misto quente">Misto quente</option>
-                <option value="Cachorro quente">Cachorro quente</option>
-                <option value="Hambúrguer">Hambúrguer</option>
-                <option value="Desejos">Desejos</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Pestiscos</option>
-                <option value="Polvo a vinagrete">Polvo a vinagrete</option>
-                <option value="Tataki">Tataki</option>
-                <option value="Cevitche">Cevitche</option>
-                <option value="Lula dore">Lula dore</option>
-                <option value="Camarão dore">Camarão dore</option>
-                <option value="Camarão alho">Camarão alho</option>
-                <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
-                <option value="Frango a passarinho">Frango a passarinho</option>
-                <option value="Filé aperetivo">Filé aperetivo</option>
-                <option value="Fritas">Fritas</option>
-                <option value="Tabua de frios">Tabua de frios</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frango</option>
-                <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
-                <option value="Frango a parmegiana">Frango a parmegiana</option>
-                <option value="Frango ao molho curry">Frango ao molho curry</option>
-                <option value="Strogonoff de frango">Strogonoff de frango</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Contra-filé</option>
-                <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
-                <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
-                <option value="Contra-filé a cavala">Contra-filé a cavala</option>
-                <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
-                <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Saladas</option>
-                <option value="Salada grega">Salada grega</option>
-                <option value="Salada tropical">Salada tropical</option>
-                <option value="Salada sentinelas">Salada sentinelas</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Sopas</option>
-                <option value="Frutos do mar">Frutos do mar</option>
-                <option value="Do dia">Do dia</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Frutos do mar</option>
-                <option value="Peixes na brasa">Peixes na brasa</option>
-                <option value="Peixe frito">Peixe frito</option>
-                <option value="Peixe grelhado">Peixe grelhado</option>
-                <option value="Ao molho de camarão">Ao molho de camarão</option>
-                <option value="Camarão no abacaxi">Camarão no abacaxi</option>
-                <option value="Camarão ao catupiry">Camarão ao catupiry</option>
-                <option value="Camarão empanado">Camarão empanado</option>
-                <option value="Risoto">Risoto</option>
-                <option value="Moqueca">Moqueca</option>
-                <option id="uppercase" style="text-transform: uppercase; font-weight: bold; font-size: large;" disabled value="0">Massas</option>
-                <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
-                <option value="Parisiense">Parisiense</option>
-                <option value="Primavera">Primavera</option>
-                <option value="Nhoque">Nhoque</option>
-                <option value="Rondelli">Rondelli</option>
-                <option value="Canelone">Canelone</option>
-                <option value="Raviolli">Raviolli</option>
+                <optgroup label="PASTÉIS">
+                    <option value="Pastel napolitano">Pastel napolitano</option>
+                    <option value="Pastel de queijo">Pastel de queijo</option>
+                    <option value="Pastel de carne">Pastel de carne</option>
+                </optgroup>
+
+                <optgroup label="LANCHES">
+                    <option value="Misto quente">Misto quente</option>
+                    <option value="Cachorro quente">Cachorro quente</option>
+                    <option value="Hambúrguer">Hambúrguer</option>
+                    <option value="Desejos">Desejos</option>
+                </optgroup>
+
+                <optgroup label="PETISCOS">
+                    <option value="Polvo a vinagrete">Polvo a vinagrete</option>
+                    <option value="Tataki">Tataki</option>
+                    <option value="Cevitche">Cevitche</option>
+                    <option value="Lula dore">Lula dore</option>
+                    <option value="Camarão dore">Camarão dore</option>
+                    <option value="Camarão alho">Camarão alho</option>
+                    <option value="Bolinho de bacalhau">Bolinho de bacalhau</option>
+                    <option value="Frango a passarinho">Frango a passarinho</option>
+                    <option value="Filé aperetivo">Filé aperetivo</option>
+                    <option value="Fritas">Fritas</option>
+                    <option value="Tabua de frios">Tabua de frios</option>
+                </optgroup>
+
+                <optgroup label="FRANGO">
+                    <option value="Frango Grelhado a campanha">Frango Grelhado a campanha</option>
+                    <option value="Frango a parmegiana">Frango a parmegiana</option>
+                    <option value="Frango ao molho curry">Frango ao molho curry</option>
+                    <option value="Strogonoff de frango">Strogonoff de frango</option>
+                </optgroup>
+                <optgroup label="CONTRA-FILÉ">
+                    <option value="Contra-filé grelhado a campanha">Contra-filé grelhado a campanha</option>
+                    <option value="Contra-filé a parmegiana">Contra-filé a parmegiana</option>
+                    <option value="Contra-filé a cavala">Contra-filé a cavala</option>
+                    <option value="Contra-filé ao molho gorgonzola">Contra-filé ao molho gorgonzola</option>
+                    <option value="Contra-filé ao molho madeira">Contra-filé ao molho madeira</option>
+                </optgroup>
+
+                <optgroup label="SALADAS">
+                    <option value="Salada grega">Salada grega</option>
+                    <option value="Salada tropical">Salada tropical</option>
+                    <option value="Salada sentinelas">Salada sentinelas</option>
+                </optgroup>
+
+                <optgroup label="SOPAS">
+                    <option value="Frutos do mar">Frutos do mar</option>
+                    <option value="Do dia">Do dia</option>
+                </optgroup>
+
+                <optgroup label="FRUTOS DO MAR">
+                    <option value="Peixes na brasa">Peixes na brasa</option>
+                    <option value="Peixe frito">Peixe frito</option>
+                    <option value="Peixe grelhado">Peixe grelhado</option>
+                    <option value="Ao molho de camarão">Ao molho de camarão</option>
+                    <option value="Camarão no abacaxi">Camarão no abacaxi</option>
+                    <option value="Camarão ao catupiry">Camarão ao catupiry</option>
+                    <option value="Camarão empanado">Camarão empanado</option>
+                    <option value="Risoto">Risoto</option>
+                    <option value="Moqueca">Moqueca</option>
+                </optgroup>
+
+                <optgroup label="MASSAS">
+                    <option value="Espaguete com camarão ao pesto">Espaguete com camarão ao pesto</option>
+                    <option value="Parisiense">Parisiense</option>
+                    <option value="Primavera">Primavera</option>
+                    <option value="Nhoque">Nhoque</option>
+                    <option value="Rondelli">Rondelli</option>
+                    <option value="Canelone">Canelone</option>
+                    <option value="Raviolli">Raviolli</option>
+                </optgroup>
             </select>
-            <input id="q8" type="number" value="1" placeholder="Quantidade">
+            <select class="q" id="q8">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
             <input id="o8" type="text" placeholder="Observações">
 
 
@@ -557,7 +769,7 @@
                 <input class="botaoAdd" id="botaoAdd" type="button" value ="Add Prato">
             </div>
 
-            <h2 id="tittlee">Bebidas Alcolicas</h2>
+            <h2 id="tittlee">Bebidas Alcoolicas</h2>
             <select name="alcool1" id="alcool1">
                 <option value="0">Nenhum</option>
                 <option value="Cervejas">Cervejas</option>
@@ -581,6 +793,20 @@
                 <option value="Sunset sentinelas">Sunset sentinelas</option>
                 <option value="Roney night">Roney night</option>
             </select>
+            <select class="q" id="a1q" style="display: block;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input id="a1o" type="text" placeholder="Observações">
+
             <select name="alcool2" id="alcool2">
                 <option value="0">Nenhum</option>
                 <option value="Cervejas">Cervejas</option>
@@ -604,6 +830,21 @@
                 <option value="Sunset sentinelas">Sunset sentinelas</option>
                 <option value="Roney night">Roney night</option>
             </select>
+            <select class="q none" id="a2q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="a2o" type="text" placeholder="Observações">
+
+
             <select name="alcool3" id="alcool3">
                 <option value="0">Nenhum</option>
                 <option value="Cervejas">Cervejas</option>
@@ -627,6 +868,21 @@
                 <option value="Sunset sentinelas">Sunset sentinelas</option>
                 <option value="Roney night">Roney night</option>
             </select>
+            <select class="q none" id="a3q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="a3o" type="text" placeholder="Observações">
+
+
             <select name="alcool4" id="alcool4">
                 <option value="0">Nenhum</option>
                 <option value="Cervejas">Cervejas</option>
@@ -650,6 +906,21 @@
                 <option value="Sunset sentinelas">Sunset sentinelas</option>
                 <option value="Roney night">Roney night</option>
             </select>
+            <select class="q none" id="a4q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="a4o" type="text" placeholder="Observações">
+
+
             <select name="alcool5" id="alcool5">
                 <option value="0">Nenhum</option>
                 <option value="Cervejas">Cervejas</option>
@@ -673,6 +944,21 @@
                 <option value="Sunset sentinelas">Sunset sentinelas</option>
                 <option value="Roney night">Roney night</option>
             </select>
+            <select class="q none" id="a5q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="a5o" type="text" placeholder="Observações">
+
+
             <select name="alcool6" id="alcool6">
                 <option value="0">Nenhum</option>
                 <option value="Cervejas">Cervejas</option>
@@ -696,6 +982,21 @@
                 <option value="Sunset sentinelas">Sunset sentinelas</option>
                 <option value="Roney night">Roney night</option>
             </select>
+            <select class="q none" id="a6q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="a6o" type="text" placeholder="Observações">
+
+
             <select name="alcool7" id="alcool7">
                 <option value="0">Nenhum</option>
                 <option value="Cervejas">Cervejas</option>
@@ -719,6 +1020,21 @@
                 <option value="Sunset sentinelas">Sunset sentinelas</option>
                 <option value="Roney night">Roney night</option>
             </select>
+            <select class="q none" id="a7q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="a7o" type="text" placeholder="Observações">
+
+
             <select name="alcool8" id="alcool8">
                 <option value="0">Nenhum</option>
                 <option value="Cervejas">Cervejas</option>
@@ -742,12 +1058,27 @@
                 <option value="Sunset sentinelas">Sunset sentinelas</option>
                 <option value="Roney night">Roney night</option>
             </select>
+            <select class="q none" id="a8q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="a8o" type="text" placeholder="Observações">
+
+
 
             <div id="centralizarBotaoAdd">
                 <input class="botaoAdd" id="botaoAddAlcools" type="button" value ="Add Alcool">
             </div>
 
-            <h2 id="tittlee">Bebidas Não Alcolicas</h2>
+            <h2 id="tittlee">Bebidas Não Alcoolicas</h2>
             <select name="semalcool1" id="semalcool1">
                 <option value="0">Nenhum</option>
                 <option value="Água sem gás">Água sem gás</option>
@@ -756,6 +1087,20 @@
                 <option value="Refrigerante">Refrigerante</option>
                 <option value="Sucos naturais">Sucos naturais</option>
             </select>
+            <select class="q" id="sa1q" style="display: block;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input id="sa1o" type="text" placeholder="Observações">
+
             <select name="semalcool2" id="semalcool2">
                 <option value="0">Nenhum</option>
                 <option value="Água sem gás">Água sem gás</option>
@@ -764,6 +1109,20 @@
                 <option value="Refrigerante">Refrigerante</option>
                 <option value="Sucos naturais">Sucos naturais</option>
             </select>
+            <select class="q none" id="sa2q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="sa2o" type="text" placeholder="Observações">
+
             <select name="semalcool3" id="semalcool3">
                 <option value="0">Nenhum</option>
                 <option value="Água sem gás">Água sem gás</option>
@@ -772,6 +1131,20 @@
                 <option value="Refrigerante">Refrigerante</option>
                 <option value="Sucos naturais">Sucos naturais</option>
             </select>
+            <select class="q none" id="sa3q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="sa3o" type="text" placeholder="Observações">
+
             <select name="semalcool4" id="semalcool4">
                 <option value="0">Nenhum</option>
                 <option value="Água sem gás">Água sem gás</option>
@@ -780,6 +1153,21 @@
                 <option value="Refrigerante">Refrigerante</option>
                 <option value="Sucos naturais">Sucos naturais</option>
             </select>
+            <select class="q none" id="sa4q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="sa4o" type="text" placeholder="Observações">
+
+
             <select name="semalcool5" id="semalcool5">
                 <option value="0">Nenhum</option>
                 <option value="Água sem gás">Água sem gás</option>
@@ -788,6 +1176,21 @@
                 <option value="Refrigerante">Refrigerante</option>
                 <option value="Sucos naturais">Sucos naturais</option>
             </select>
+            <select class="q none" id="sa5q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="sa5o" type="text" placeholder="Observações">
+
+
             <select name="semalcool6" id="semalcool6">
                 <option value="0">Nenhum</option>
                 <option value="Água sem gás">Água sem gás</option>
@@ -796,6 +1199,20 @@
                 <option value="Refrigerante">Refrigerante</option>
                 <option value="Sucos naturais">Sucos naturais</option>
             </select>
+            <select class="q none" id="sa6q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="sa6o" type="text" placeholder="Observações">
+
             <select name="semalcool7" id="semalcool7">
                 <option value="0">Nenhum</option>
                 <option value="Água sem gás">Água sem gás</option>
@@ -804,6 +1221,20 @@
                 <option value="Refrigerante">Refrigerante</option>
                 <option value="Sucos naturais">Sucos naturais</option>
             </select>
+            <select class="q none" id="sa7q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="sa7o" type="text" placeholder="Observações">
+
             <select name="semalcool8" id="semalcool8">
                 <option value="0">Nenhum</option>
                 <option value="Água sem gás">Água sem gás</option>
@@ -812,9 +1243,22 @@
                 <option value="Refrigerante">Refrigerante</option>
                 <option value="Sucos naturais">Sucos naturais</option>
             </select>
+            <select class="q none" id="sa8q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="sa8o" type="text" placeholder="Observações">
 
             <div id="centralizarBotaoAdd">
-                <input class="botaoAdd" id="botaoAddNaoAlcools" type="button" value ="Add Sem Alcool">
+                <input class="botaoAdd" id="botaoAddNaoAlcools" type="button" value ="Add S/ Alcool">
             </div>
 
             <h2 id="tittlee">Sobremesa</h2>
@@ -825,6 +1269,21 @@
                 <option value="Pudim">Pudim</option>
                 <option value="Do dia">Do dia</option>
             </select>
+            <select class="q" id="s1q" style="display: block;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input id="s1o" type="text" placeholder="Observações">
+
+
             <select name="sobremesa2" id="sobremesa2">
                 <option value="0">Nenhum</option>
                 <option value="Petiti gateau">Petiti gateau</option>
@@ -832,6 +1291,21 @@
                 <option value="Pudim">Pudim</option>
                 <option value="Do dia">Do dia</option>
             </select>
+            <select class="q none" id="s2q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="s2o" type="text" placeholder="Observações">
+
+
             <select name="sobremesa3" id="sobremesa3">
                 <option value="0">Nenhum</option>
                 <option value="Petiti gateau">Petiti gateau</option>
@@ -839,6 +1313,21 @@
                 <option value="Pudim">Pudim</option>
                 <option value="Do dia">Do dia</option>
             </select>
+            <select class="q none" id="s3q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="s3o" type="text" placeholder="Observações">
+
+
             <select name="sobremesa4" id="sobremesa4">
                 <option value="0">Nenhum</option>
                 <option value="Petiti gateau">Petiti gateau</option>
@@ -846,6 +1335,21 @@
                 <option value="Pudim">Pudim</option>
                 <option value="Do dia">Do dia</option>
             </select>
+            <select class="q none" id="s4q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="s4o" type="text" placeholder="Observações">
+
+
             <select name="sobremesa5" id="sobremesa5">
                 <option value="0">Nenhum</option>
                 <option value="Petiti gateau">Petiti gateau</option>
@@ -853,6 +1357,21 @@
                 <option value="Pudim">Pudim</option>
                 <option value="Do dia">Do dia</option>
             </select>
+            <select class="q none" id="s5q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="s5o" type="text" placeholder="Observações">
+
+
             <select name="sobremesa6" id="sobremesa6">
                 <option value="0">Nenhum</option>
                 <option value="Petiti gateau">Petiti gateau</option>
@@ -860,6 +1379,21 @@
                 <option value="Pudim">Pudim</option>
                 <option value="Do dia">Do dia</option>
             </select>
+            <select class="q none" id="s6q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="s6o" type="text" placeholder="Observações">
+
+
             <select name="sobremesa7" id="sobremesa7">
                 <option value="0">Nenhum</option>
                 <option value="Petiti gateau">Petiti gateau</option>
@@ -867,6 +1401,21 @@
                 <option value="Pudim">Pudim</option>
                 <option value="Do dia">Do dia</option>
             </select>
+            <select class="q none" id="s7q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="s7o" type="text" placeholder="Observações">
+
+
             <select name="sobremesa8" id="sobremesa8">
                 <option value="0">Nenhum</option>
                 <option value="Petiti gateau">Petiti gateau</option>
@@ -874,6 +1423,19 @@
                 <option value="Pudim">Pudim</option>
                 <option value="Do dia">Do dia</option>
             </select>
+            <select class="q none" id="s8q">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="none" id="s8o" type="text" placeholder="Observações">
 
             <div id="centralizarBotaoAdd">
                 <input class="botaoAdd" id="botaoAddSobremesa" type="button" value ="Add Sobremesa">

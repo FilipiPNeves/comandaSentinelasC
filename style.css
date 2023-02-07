@@ -117,6 +117,8 @@ select {
 
 /*CSS pratos*/
 
+
+
 #prato1 {
 
 }
@@ -253,6 +255,10 @@ select {
     display: none;
 }
 
+#q1 {
+    display: block;
+}
+
 #q2 {
     display: none;
 }
@@ -306,5 +312,18 @@ select {
 }
 
 #o8 {
+    display: none;
+}
+
+.divTotalPratos {
+    border: 0.2em solid black;
+}
+
+.q {
+    width: 10em;
+    margin: 1em auto 1em auto;
+}
+
+.none {
     display: none;
 }
