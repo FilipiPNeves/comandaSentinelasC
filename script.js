@@ -65,6 +65,11 @@ function abrirWhatsapp() {
     var q8 = document.getElementById("q8");
     var o8 = document.getElementById("o8");
 
+    let div1 = document.getElementById("div1").checked;
+    
+    let div2 = document.getElementById("div2").checked;
+
+    
     
 
 
@@ -73,11 +78,13 @@ function abrirWhatsapp() {
         + "%0a" // Quebra de linha
 
 
+
         //Hospede ou Passante
 
-        if(nomeDoQuarto != 0) {
-            url += "*Nome do quarto:*: " + nomeDoQuarto + "%0a" + "%0a"
-        }else if (nome != 0) {
+        if(nomeDoQuarto != 0 && div1 == 1 ) {
+            url += "*Nome do quarto*: " + nomeDoQuarto + "%0a" + "%0a"
+            console.log(div1 == 1);
+        }else if (nome != 0 && div2 == 1 ) {
             url += "*Nome do Passante*: " + nome + "%0a" + "%0a"
         }
 
